@@ -25,3 +25,5 @@ const PaymentsProxy = new Proxy(
 ) as Spec;
 
 export const NativePayments = isDefined(PaymentsModule) ? PaymentsModule : PaymentsProxy;
+
+console.log('NativePayments', NativePayments);
